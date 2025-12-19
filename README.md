@@ -31,8 +31,8 @@ LANG=en pnpm tauri dev  # English
 
 **Windows (PowerShell):**
 ```powershell
-$env:LANG="es"; wails dev  # Spanish
-$env:LANG="en"; wails dev  # English
+$env:LANG="es"; pnpm tauri dev  # Spanish
+$env:LANG="en"; pnpm tauri dev  # English
 ```
 
 Currently supported languages:

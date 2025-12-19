@@ -1,0 +1,1 @@
+- Change bomb icon for mine

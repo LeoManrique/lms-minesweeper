@@ -1,0 +1,16 @@
+.board {
+  display: inline-flex;
+  flex-direction: column;
+  border: 3px solid;
+  border-color: var(--border-dark) var(--border-mid) var(--border-mid) var(--border-dark);
+  background-color: var(--bg-element);
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: inset 2px 2px 4px var(--shadow-darker), inset -1px -1px 2px var(--shadow-lightest);
+}
+
+.board-row {
+  display: flex;
+  line-height: 0;
+  gap: 0;
+}

@@ -1,0 +1,39 @@
+{
+  "app": {
+    "title": "Minesweeper"
+  },
+  "menu": {
+    "label": "Menu",
+    "difficulty": "Difficulty",
+    "theme": "Theme"
+  },
+  "difficulty": {
+    "beginner": "Beginner (9×9, 10 mines)",
+    "intermediate": "Intermediate (16×16, 40 mines)",
+    "expert": "Expert (16×30, 99 mines)"
+  },
+  "theme": {
+    "dark": "Dark",
+    "classic": "Classic",
+    "very-dark": "Very Dark",
+    "light": "Light"
+  },
+  "game": {
+    "mines": "Mines:",
+    "time": "Time:",
+    "won": "You Won! Time: {{time}} seconds",
+    "lost": "Game Over! Click the face to try again"
+  },
+  "dialog": {
+    "changeDifficulty": {
+      "title": "Change Difficulty?",
+      "message": "Your current game progress will be lost.",
+      "cancel": "Cancel",
+      "continue": "Continue"
+    }
+  },
+  "window": {
+    "minimize": "Minimize",
+    "close": "Close"
+  }
+}

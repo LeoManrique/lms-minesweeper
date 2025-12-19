@@ -1,0 +1,110 @@
+/**
+ * MINE-SWEEPER Font
+ * Created by: Gangetsha Lyx
+ * License: Creative Commons Attribution Share Alike 3.0
+ * Source: https://fontstruct.com/fontstructions/show/1501665
+ * License: http://creativecommons.org/licenses/by-sa/3.0/
+ */
+@font-face {
+  font-family: 'Mine Sweeper';
+  src: url('../assets/fonts/mine-sweeper.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cell {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 22px;
+  font-family: 'Mine Sweeper', 'Press Start 2P', Arial, sans-serif;
+  cursor: pointer;
+  user-select: none;
+  border: 3px solid;
+  transition: all 0.05s;
+  flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  box-sizing: border-box;
+}
+
+.cell.hidden {
+  background-color: var(--cell-hidden);
+  border-top-color: var(--border-light);
+  border-left-color: var(--border-light);
+  border-right-color: var(--border-dark);
+  border-bottom-color: var(--border-dark);
+  box-shadow: var(--cell-hidden-shadow);
+}
+
+.cell.hidden:hover {
+  background-color: var(--cell-hidden-hover);
+}
+
+.cell.hidden:active {
+  background-color: var(--cell-hidden);
+  border: 2px solid var(--bg-element);
+  border-top-color: var(--bg-element);
+  border-left-color: var(--bg-element);
+  border-right-color: var(--bg-element);
+  border-bottom-color: var(--bg-element);
+}
+
+.cell.revealed {
+  background-color: var(--cell-revealed);
+  border: 1px solid var(--border-dark);
+  cursor: default;
+  box-shadow: var(--cell-revealed-shadow);
+}
+
+.cell.mine {
+  background-color: var(--cell-mine);
+}
+
+.cell.flagged {
+  font-size: clamp(14px, 2.5vw, 20px);
+}
+
+.cell.flagged.hidden {
+  background-color: var(--cell-hidden);
+}
+
+.cell.incorrect-flag {
+  background-color: var(--cell-incorrect-flag) !important;
+  border-top-color: var(--border-incorrect-light) !important;
+  border-left-color: var(--border-incorrect-light) !important;
+  border-right-color: var(--border-incorrect-dark) !important;
+  border-bottom-color: var(--border-incorrect-dark) !important;
+}
+
+/* Number colors - Theme-aware */
+.cell.number-1 { color: var(--num-1); }
+.cell.number-2 { color: var(--num-2); }
+.cell.number-3 { color: var(--num-3); }
+.cell.number-4 { color: var(--num-4); }
+.cell.number-5 { color: var(--num-5); }
+.cell.number-6 { color: var(--num-6); }
+.cell.number-7 { color: var(--num-7); }
+.cell.number-8 { color: var(--num-8); }
+
+/* Disabled state - when game is over */
+.cell.disabled {
+  cursor: default !important;
+  pointer-events: none;
+}
+
+.cell.disabled.hidden:hover {
+  background-color: var(--cell-hidden);
+}
+
+.cell.disabled.hidden:active {
+  background-color: var(--cell-hidden);
+  border: 3px solid;
+  border-top-color: var(--border-light);
+  border-left-color: var(--border-light);
+  border-right-color: var(--border-dark);
+  border-bottom-color: var(--border-dark);
+}

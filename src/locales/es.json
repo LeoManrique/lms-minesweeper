@@ -1,0 +1,39 @@
+{
+  "app": {
+    "title": "Buscaminas"
+  },
+  "menu": {
+    "label": "Menú",
+    "difficulty": "Dificultad",
+    "theme": "Tema"
+  },
+  "difficulty": {
+    "beginner": "Principiante (9×9, 10 minas)",
+    "intermediate": "Intermedio (16×16, 40 minas)",
+    "expert": "Experto (16×30, 99 minas)"
+  },
+  "theme": {
+    "dark": "Oscuro",
+    "classic": "Clásico",
+    "very-dark": "Muy Oscuro",
+    "light": "Claro"
+  },
+  "game": {
+    "mines": "Minas:",
+    "time": "Tiempo:",
+    "won": "¡Ganaste! Tiempo: {{time}} segundos",
+    "lost": "Juego Terminado. Haz clic en la cara para intentar de nuevo"
+  },
+  "dialog": {
+    "changeDifficulty": {
+      "title": "¿Cambiar Dificultad?",
+      "message": "Se perderá el progreso de tu juego actual.",
+      "cancel": "Cancelar",
+      "continue": "Continuar"
+    }
+  },
+  "window": {
+    "minimize": "Minimizar",
+    "close": "Cerrar"
+  }
+}

@@ -1,0 +1,308 @@
+/* ========================================
+   THEME SYSTEM - CSS Custom Properties
+   ======================================== */
+
+:root,
+:root[data-theme="dark"] {
+    /* Backgrounds */
+    --bg-main: #2d3748;
+    --bg-header-top: #3b4252;
+    --bg-header-bottom: #2e3440;
+    --bg-panel: #374151;
+    --bg-element: #4b5563;
+    --bg-element-hover: #5b6573;
+
+    /* Cells */
+    --cell-hidden: #6b7280;
+    --cell-hidden-hover: #7b8290;
+    --cell-revealed: #4b5563;
+    --cell-mine: #ff0000;
+    --cell-incorrect-flag: rgba(255, 100, 100, 0.3);
+    --cell-revealed-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+    --cell-hidden-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.2), inset -1px -1px 0 rgba(0, 0, 0, 0.3);
+
+    /* Borders (3D effect) */
+    --border-light: #9ca3af;
+    --border-dark: #1f2937;
+    --border-mid: #6b7280;
+    --border-header: #1a1f2e;
+    --border-incorrect-light: #ff9999;
+    --border-incorrect-dark: #4d2933;
+
+    /* Text */
+    --text-primary: #e5e7eb;
+    --text-secondary: #9ca3af;
+
+    /* Digital Display */
+    --display-bg: #000000;
+    --display-text: #ff0000;
+    --display-shadow: rgba(255, 0, 0, 0.15);
+    --display-border-light: #6b7280;
+    --display-border-dark: #4a4a4a;
+
+    /* Number Colors (Modern Vibrant) */
+    --num-1: #0099FF;
+    --num-2: #00FF44;
+    --num-3: #FF0000;
+    --num-4: #0066FF;
+    --num-5: #FF0000;
+    --num-6: #00FFFF;
+    --num-7: #FFFFFF;
+    --num-8: #CCCCCC;
+
+    /* Semantic Colors */
+    --success: #10b981;
+    --success-shadow: rgba(16, 185, 129, 0.4);
+    --danger: #ef4444;
+    --danger-hover: #dc2626;
+    --danger-light: #f87171;
+    --danger-dark: #b91c1c;
+    --danger-shadow: rgba(239, 68, 68, 0.4);
+    --close-hover: #e81123;
+
+    /* Shadows & Overlays */
+    --shadow-light: rgba(255, 255, 255, 0.2);
+    --shadow-lighter: rgba(255, 255, 255, 0.1);
+    --shadow-lightest: rgba(255, 255, 255, 0.05);
+    --shadow-dark: rgba(0, 0, 0, 0.2);
+    --shadow-darker: rgba(0, 0, 0, 0.3);
+    --shadow-darkest: rgba(0, 0, 0, 0.4);
+    --overlay: rgba(0, 0, 0, 0.6);
+}
+
+/* Classic Theme (Windows 95 Style) */
+:root[data-theme="classic"] {
+    /* Backgrounds */
+    --bg-main: #c0c0c0;
+    --bg-header-top: #c0c0c0;
+    --bg-header-bottom: #c0c0c0;
+    --bg-panel: #c0c0c0;
+    --bg-element: #c0c0c0;
+    --bg-element-hover: #d0d0d0;
+
+    /* Cells */
+    --cell-hidden: #c0c0c0;
+    --cell-hidden-hover: #d0d0d0;
+    --cell-revealed: #c0c0c0;
+    --cell-mine: #ff0000;
+    --cell-incorrect-flag: rgba(255, 100, 100, 0.4);
+    --cell-revealed-shadow: none;
+    --cell-hidden-shadow: none;
+
+    /* Borders (3D effect) */
+    --border-light: #ffffff;
+    --border-dark: #808080;
+    --border-mid: #ffffff;
+    --border-header: #808080;
+    --border-incorrect-light: #ffcccc;
+    --border-incorrect-dark: #997777;
+
+    /* Text */
+    --text-primary: #000000;
+    --text-secondary: #404040;
+
+    /* Digital Display */
+    --display-bg: #000000;
+    --display-text: #ff0000;
+    --display-shadow: rgba(255, 0, 0, 0.15);
+    --display-border-light: #808080;
+    --display-border-dark: #404040;
+
+    /* Number Colors (Classic) */
+    --num-1: #0000FF;
+    --num-2: #008000;
+    --num-3: #FF0000;
+    --num-4: #000080;
+    --num-5: #800000;
+    --num-6: #008080;
+    --num-7: #000000;
+    --num-8: #808080;
+
+    /* Semantic Colors */
+    --success: #008000;
+    --success-shadow: rgba(0, 128, 0, 0.4);
+    --danger: #ff0000;
+    --danger-hover: #cc0000;
+    --danger-light: #ff4444;
+    --danger-dark: #990000;
+    --danger-shadow: rgba(255, 0, 0, 0.4);
+    --close-hover: #ff0000;
+
+    /* Shadows & Overlays - Classic uses solid colors, no soft shadows */
+    --shadow-light: #ffffff;
+    --shadow-lighter: #dfdfdf;
+    --shadow-lightest: #ffffff;
+    --shadow-dark: #808080;
+    --shadow-darker: #808080;
+    --shadow-darkest: #808080;
+    --overlay: rgba(0, 0, 0, 0.5);
+}
+
+/* Very Dark Theme */
+:root[data-theme="very-dark"] {
+    /* Backgrounds */
+    --bg-main: #0d0d0d;
+    --bg-header-top: #1a1a1a;
+    --bg-header-bottom: #121212;
+    --bg-panel: #1a1a1a;
+    --bg-element: #252525;
+    --bg-element-hover: #303030;
+
+    /* Cells */
+    --cell-hidden: #2a2a2a;
+    --cell-hidden-hover: #353535;
+    --cell-revealed: #1f1f1f;
+    --cell-mine: #ff0000;
+    --cell-incorrect-flag: rgba(255, 100, 100, 0.25);
+    --cell-revealed-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    --cell-hidden-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.1), inset -1px -1px 0 rgba(0, 0, 0, 0.5);
+
+    /* Borders (3D effect) */
+    --border-light: #404040;
+    --border-dark: #0a0a0a;
+    --border-mid: #2a2a2a;
+    --border-header: #000000;
+    --border-incorrect-light: #ff8888;
+    --border-incorrect-dark: #2a0808;
+
+    /* Text */
+    --text-primary: #e0e0e0;
+    --text-secondary: #808080;
+
+    /* Digital Display */
+    --display-bg: #000000;
+    --display-text: #ff0000;
+    --display-shadow: rgba(255, 0, 0, 0.15);
+    --display-border-light: #303030;
+    --display-border-dark: #0a0a0a;
+
+    /* Number Colors (Neon for dark bg) */
+    --num-1: #00aaff;
+    --num-2: #00ff66;
+    --num-3: #ff3333;
+    --num-4: #6699ff;
+    --num-5: #ff6666;
+    --num-6: #00ffff;
+    --num-7: #ffffff;
+    --num-8: #aaaaaa;
+
+    /* Semantic Colors */
+    --success: #00cc66;
+    --success-shadow: rgba(0, 204, 102, 0.4);
+    --danger: #ff3333;
+    --danger-hover: #cc0000;
+    --danger-light: #ff6666;
+    --danger-dark: #990000;
+    --danger-shadow: rgba(255, 51, 51, 0.4);
+    --close-hover: #ff0000;
+
+    /* Shadows & Overlays */
+    --shadow-light: rgba(255, 255, 255, 0.1);
+    --shadow-lighter: rgba(255, 255, 255, 0.05);
+    --shadow-lightest: rgba(255, 255, 255, 0.02);
+    --shadow-dark: rgba(0, 0, 0, 0.3);
+    --shadow-darker: rgba(0, 0, 0, 0.5);
+    --shadow-darkest: rgba(0, 0, 0, 0.7);
+    --overlay: rgba(0, 0, 0, 0.8);
+}
+
+/* Light Theme */
+:root[data-theme="light"] {
+    /* Backgrounds */
+    --bg-main: #f0f0f0;
+    --bg-header-top: #e8e8e8;
+    --bg-header-bottom: #d8d8d8;
+    --bg-panel: #e0e0e0;
+    --bg-element: #e0e0e0;
+    --bg-element-hover: #d0d0d0;
+
+    /* Cells */
+    --cell-hidden: #d0d0d0;
+    --cell-hidden-hover: #c0c0c0;
+    --cell-revealed: #e8e8e8;
+    --cell-mine: #ff0000;
+    --cell-incorrect-flag: rgba(255, 100, 100, 0.35);
+    --cell-revealed-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+    --cell-hidden-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.8), inset -1px -1px 0 rgba(0, 0, 0, 0.15);
+
+    /* Borders (3D effect) */
+    --border-light: #ffffff;
+    --border-dark: #a0a0a0;
+    --border-mid: #d0d0d0;
+    --border-header: #b0b0b0;
+    --border-incorrect-light: #ffdfdf;
+    --border-incorrect-dark: #bb9999;
+
+    /* Text */
+    --text-primary: #1a1a1a;
+    --text-secondary: #606060;
+
+    /* Digital Display */
+    --display-bg: #1a1a1a;
+    --display-text: #ff0000;
+    --display-shadow: rgba(255, 0, 0, 0.15);
+    --display-border-light: #808080;
+    --display-border-dark: #404040;
+
+    /* Number Colors (Darker for light bg) */
+    --num-1: #0066cc;
+    --num-2: #008800;
+    --num-3: #cc0000;
+    --num-4: #000099;
+    --num-5: #990000;
+    --num-6: #006666;
+    --num-7: #333333;
+    --num-8: #666666;
+
+    /* Semantic Colors */
+    --success: #00aa55;
+    --success-shadow: rgba(0, 170, 85, 0.3);
+    --danger: #dd3333;
+    --danger-hover: #bb0000;
+    --danger-light: #ff6666;
+    --danger-dark: #990000;
+    --danger-shadow: rgba(221, 51, 51, 0.3);
+    --close-hover: #dd0000;
+
+    /* Shadows & Overlays */
+    --shadow-light: rgba(255, 255, 255, 0.8);
+    --shadow-lighter: rgba(255, 255, 255, 0.5);
+    --shadow-lightest: rgba(255, 255, 255, 0.2);
+    --shadow-dark: rgba(0, 0, 0, 0.1);
+    --shadow-darker: rgba(0, 0, 0, 0.15);
+    --shadow-darkest: rgba(0, 0, 0, 0.2);
+    --overlay: rgba(0, 0, 0, 0.4);
+}
+
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#app {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
